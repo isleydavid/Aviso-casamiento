@@ -1,15 +1,15 @@
 
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutUs from './components/AboutUs';
-import WeddingInfo from './components/WeddingInfo';
-import Destination from './components/Destination';
-import Logistics from './components/Logistics';
-import FlightEstimates from './components/FlightEstimates';
-import Accommodation from './components/Accommodation';
-import PlanningTips from './components/PlanningTips';
-import Footer from './components/Footer';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import AboutUs from './components/AboutUs.tsx';
+import WeddingInfo from './components/WeddingInfo.tsx';
+import Destination from './components/Destination.tsx';
+import Logistics from './components/Logistics.tsx';
+import FlightEstimates from './components/FlightEstimates.tsx';
+import Accommodation from './components/Accommodation.tsx';
+import PlanningTips from './components/PlanningTips.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
