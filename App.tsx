@@ -1,5 +1,6 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header.tsx';
 import Hero from './components/Hero.tsx';
 import AboutUs from './components/AboutUs.tsx';
@@ -10,10 +11,26 @@ import FlightEstimates from './components/FlightEstimates.tsx';
 import Accommodation from './components/Accommodation.tsx';
 import PlanningTips from './components/PlanningTips.tsx';
 import Footer from './components/Footer.tsx';
+import LoadingScreen from './components/LoadingScreen.tsx';
 
 const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Elegant loading duration
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#fdfcf9] text-[#1a1a1a] overflow-x-hidden">
+      <AnimatePresence mode="wait">
+        {isLoading && <LoadingScreen key="loader" />}
+      </AnimatePresence>
+      
       <Header />
       <main className="space-y-16 py-16">
         <section id="home">
