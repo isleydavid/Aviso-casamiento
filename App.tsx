@@ -33,35 +33,35 @@ const App: React.FC = () => {
       
       <Header />
       <main className="space-y-16 py-16">
-        <section id="home">
+        <section id="home" className="scroll-mt-32">
           <Hero />
         </section>
         
-        <section id="nosotros" className="container mx-auto px-6">
+        <section id="nosotros" className="container mx-auto px-6 scroll-mt-32">
           <AboutUs />
         </section>
 
-        <section id="el-evento" className="container mx-auto px-6">
+        <section id="el-evento" className="container mx-auto px-6 scroll-mt-32">
           <WeddingInfo />
         </section>
 
-        <section id="joao-pessoa" className="container mx-auto px-6">
+        <section id="joao-pessoa" className="container mx-auto px-6 scroll-mt-32">
           <Destination />
         </section>
 
-        <section id="como-llegar" className="container mx-auto px-6">
+        <section id="como-llegar" className="container mx-auto px-6 scroll-mt-32">
           <Logistics />
         </section>
 
-        <section id="vuelos" className="container mx-auto px-6">
+        <section id="vuelos" className="container mx-auto px-6 scroll-mt-32">
           <FlightEstimates />
         </section>
 
-        <section id="hospedaje" className="container mx-auto px-6">
+        <section id="hospedaje" className="container mx-auto px-6 scroll-mt-32">
           <Accommodation />
         </section>
 
-        <section id="planificacion" className="container mx-auto px-6">
+        <section id="planificacion" className="container mx-auto px-6 scroll-mt-32">
           <PlanningTips />
         </section>
       </main>
